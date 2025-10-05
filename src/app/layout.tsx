@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import { Navbar } from '@/components/cosmic-explorer/navbar';
+import { Navbar } from '@/components/layout/navbar';
 import { LanguageProvider } from '@/context/language-context';
 
 export const metadata: Metadata = {

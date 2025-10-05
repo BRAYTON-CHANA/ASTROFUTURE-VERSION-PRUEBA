@@ -1,5 +1,3 @@
-# Firebase Studio
+NASA_API_KEY=TU_CLAVE_DE_API_AQUI
 
-This is a NextJS starter in Firebase Studio.
 
-To get started, take a look at src/app/page.tsx.

@@ -26,7 +26,8 @@ export async function getExplanation(
     return { success: true, explanation: result.explanation };
   } catch (error) {
     console.error('Error in getExplanation action:', error);
-    return { success: false, error: 'An unexpected error occurred while generating the explanation.' };
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    return { success: false, error: `An unexpected error occurred: ${errorMessage}` };
   }
 }
 
@@ -52,7 +53,8 @@ export async function getHypotheticalScenario(
     return { success: true, evaluation: result.evaluation };
   } catch (error) {
     console.error('Error in getHypotheticalScenario action:', error);
-    return { success: false, error: 'An unexpected error occurred while evaluating the scenario.' };
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    return { success: false, error: `An unexpected error occurred: ${errorMessage}` };
   }
 }
 
@@ -84,6 +86,7 @@ export async function getQuizQuestions(
     return { success: true, questions: results };
   } catch (error) {
     console.error('Error in getQuizQuestions action:', error);
-    return { success: false, error: 'An unexpected error occurred while generating the questions.' };
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    return { success: false, error: `Failed to generate questions: ${errorMessage}` };
   }
 }

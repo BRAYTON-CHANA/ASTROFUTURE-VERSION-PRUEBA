@@ -2,7 +2,8 @@
 
 import * as React from 'react';
 import { useActionState } from 'react';
-import { getQuizQuestions, type QuizQuestionState, type GenerateQuizQuestionOutput } from '@/app/actions';
+import { getQuizQuestions, type QuizQuestionState } from '@/app/actions';
+import { type GenerateQuizQuestionOutput } from '@/ai/flows/generate-quiz-question';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
@@ -11,8 +12,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Loader2, CheckCircle2, XCircle } from 'lucide-react';
 import { useLanguage } from '@/context/language-context';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { QuizMinigame } from '@/components/cosmic-explorer/quiz-minigame';
-
+import { QuizMinigame } from '@/components/quiz-components/quiz-minigame';
 
 const initialQuizState: QuizQuestionState = { success: false };
 
@@ -118,8 +118,7 @@ export default function CuestionarioPage() {
       formData.append('language', language === 'es' ? 'Spanish' : 'English');
       submitAction(formData);
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [category, language]);
+  }, [category, language, submitAction]);
   
   React.useEffect(() => {
     startNewQuiz();
