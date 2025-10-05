@@ -11,18 +11,47 @@
   },
   "home": {
     "hero": {
-      "title": "Explora las Maravillas del Cosmos",
-      "subtitle": "Navega a través de asteroides, cometas y otros objetos celestes en nuestro vecindario cósmico.",
-      "cta": "Comienza a Explorar"
+      "title": "Explora. Descubre. Despegua.",
+      "subtitle": "Adéntrate en el cosmos y observa cómo los asteroides cruzan el cielo en tiempo real.",
+      "cta": "Explorar"
     },
-    "featuredAsteroids": {
-      "title": "Asteroides Destacados"
+    "spaceDebris": {
+      "title": "Diferencias Clave en el Cosmos",
+      "asteroid": {
+        "title": "Asteroide",
+        "text": "Un cuerpo rocoso relativamente pequeño que orbita alrededor del Sol. La mayoría se encuentra en el cinturón de asteroides entre Marte y Júpiter. Su tamaño varía desde metros hasta cientos de kilómetros."
+      },
+      "meteoroid": {
+        "title": "Meteoroide",
+        "text": "Un pequeño fragmento de un asteroide o cometa. Son más pequeños que los asteroides, desde granos de polvo hasta rocas de un metro de ancho."
+      },
+      "meteor": {
+        "title": "Meteoro",
+        "text": "El fenómeno luminoso que ocurre cuando un meteoroide entra en la atmósfera de la Tierra y se quema. Comúnmente conocido como 'estrella fugaz'."
+      },
+      "meteorite": {
+        "title": "Meteorito",
+        "text": "Un meteoroide que sobrevive a su paso por la atmósfera y aterriza en la superficie de la Tierra. Son los restos rocosos o metálicos que podemos encontrar."
+      }
     },
-    "featuredComets": {
-      "title": "Cometas Famosos"
-    },
-    "viewAll": {
-      "cta": "Explorar la Galería Completa"
+    "orbitTypes": {
+      "title": "Tipos de Órbitas Cercanas a la Tierra",
+      "amor": {
+        "title": "Asteroides Amor",
+        "text": "Estos asteroides tienen órbitas que se acercan a la órbita de la Tierra pero no la cruzan. Se encuentran entre las órbitas de la Tierra y Marte."
+      },
+      "apollo": {
+        "title": "Asteroides Apolo",
+        "text": "Tienen órbitas que cruzan la de la Tierra. Pasan la mayor parte del tiempo fuera de la órbita terrestre, pero pueden representar un peligro de colisión."
+      },
+      "aten": {
+        "title": "Asteroides Atón",
+        "text": "También cruzan la órbita de la Tierra, pero a diferencia de los Apolo, pasan la mayor parte de su tiempo dentro de la órbita de nuestro planeta."
+      },
+      "atira": {
+        "title": "Asteroides Atira",
+        "text": "Sus órbitas están completamente contenidas dentro de la órbita de la Tierra. Son los más difíciles de detectar desde nuestro planeta."
+      }
     }
   },
   "card": {
