@@ -1,19 +1,23 @@
 # Dependencies
 /node_modules
 
-# Next.js build output
+# Build directory
 /.next/
 /out/
 
-# Local environment variables
-.env*.local
+# Production build artifacts
+/build
 
-# Log files
+# Miscellaneous
+.DS_Store
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 
-# Other
-.DS_Store
-*.pem
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
